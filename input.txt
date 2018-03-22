@@ -1,0 +1,101 @@
+# x, y, vx, vy
+# 0, 0 is defined as the top left, our axis
+# are as follows:
+#
+#      __________\ +x
+#      |         /
+#      |
+#      |
+#      |
+#     \|/ +y
+#  
+
+
+
+# This is an example board for Mad:5
+
+# Ask user for the board dimensions
+Num_Cols = 4
+Num_Rows = 6
+
+# Ask user for number of removable blocks A,B,C
+Num_A = 2
+Num_B = 0
+Num_C = 1
+
+# Ask user for the points for which he/she wants the laser light to intersect, the sum of coordinates should be odd
+# Must have unique destination points without repetition, coordinates must be within the boundary
+# specification on Destination = x coordinate, y coordinate (separated by a space)
+
+Num_Destination = 5
+
+Destination = 6 1 
+Destination = 8 3
+Destination = 3 4
+Destination = 6 7
+Destination = 1 8
+
+# Ask user to input number and coordinates of all start points. 
+# Specification on start = x coordinate, y coordinate, direction of x(v1), direction of y(v2) (separated by a space)
+# sum of x and y coordinates should be odd
+# Must have unique start points without repetition, coordinates must be within the boundary
+
+Num_Start = 2
+ 
+start = 7 6 -1 -1
+start = 8 11 -1 -1
+
+
+##########################################################################
+
+#Ask user to input number of block X and its corresponding positions 
+#Specification on position of Block X: row number of Block X, column number of Block X (separated by a space)
+#Must have unique positions of Block X without repetition, blocks must be within the boundary
+
+
+Num_X = 0
+
+# Input format should look like this if Num_X = 2
+X = 2 1 
+X = 2 3 
+
+
+
+##########################################################################
+
+
+#Ask user to input number of fixed block A (FA) and its corresponding positions
+#Specification on position of Block FA: row number of Block FA, column number of Block FA (separated by a space)
+#Must have unique positions of Block FA without repetition, blocks must be within the boundary
+ 
+Num_fixedA = 0
+
+# Input format should look like this if Num_fixedA = 1
+FA = 1 3 
+
+
+##########################################################################
+
+#Ask user to input number of fixed block B (FB) and its corresponding positions 
+#Specification on position of Block FB: row number of Block FB, column number of Block FB (separated by a space)
+#Must have unique positions of Block FB without repetition, blocks must be within the boundary
+
+Num_fixedB = 0
+
+# Input format should look like this if Num_fixedB = 1
+FB = 1 2 
+
+
+##########################################################################
+
+#Ask user to input number of fixed block C (FC) and its corresponding positions
+#Specification on position of Block FC: row number of Block FC, column number of Block FC (separated by a space)
+#Must have unique positions of Block FC without repetition, blocks must be within the boundary
+ 
+Num_fixedC = 0
+
+# Input format should look like this if Num_fixedC = 1
+FC = 3 4 
+
+ 
+
